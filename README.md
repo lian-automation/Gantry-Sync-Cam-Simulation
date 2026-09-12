@@ -1,6 +1,6 @@
 # 龙门双轴同步 与 电子凸轮·飞剪 —— 虚拟轴仿真（求职作品集项目）
 
-[![CI](https://github.com/lwj15089590118/Gantry-Sync-Cam-Simulation/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/lwj15089590118/Gantry-Sync-Cam-Simulation/actions/workflows/ci.yml)
+[![CI](https://github.com/lian-automation/Gantry-Sync-Cam-Simulation/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/lian-automation/Gantry-Sync-Cam-Simulation/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
@@ -161,4 +161,4 @@ python cam/electronic_cam.py   # 凸轮表斜率 + 飞剪运行 + 换产演示
 
 ## 许可证
 
-[MIT License](LICENSE)（版权人 lwj15089590118）。仅供学习与求职作品集展示使用。
+[MIT License](LICENSE)（版权人 lian-automation）。仅供学习与求职作品集展示使用。
