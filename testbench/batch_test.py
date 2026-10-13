@@ -35,9 +35,9 @@
 from __future__ import annotations
 
 import csv
+import os
 import sys
 from dataclasses import dataclass
-from datetime import datetime
 from pathlib import Path
 
 import numpy as np
@@ -536,7 +536,9 @@ def build_report_md(
     checks: list[tuple[str, bool, str]] | None = None,
 ) -> str:
     """把全部实验结果拼装成 Markdown 测试报告文本"""
-    now = datetime.now().strftime("%Y-%m-%d %H:%M")
+    # 时间戳默认固定，保证"同一输入 → 逐字节相同的报告"（可复现）；
+    # 需要真实生成时刻时用环境变量 REPORT_TIMESTAMP 传入（CI/交付快照用）。
+    now = os.environ.get("REPORT_TIMESTAMP") or "（未指定：设置 REPORT_TIMESTAMP 记录生成时刻）"
 
     # ---- 龙门矩阵表 ----
     lines = []
